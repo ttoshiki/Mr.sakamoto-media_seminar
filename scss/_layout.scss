@@ -1,0 +1,15 @@
+@import '_variables';
+
+.l-section {
+    padding: 48px 0;
+}
+.l-content {
+    max-width: $--content-width-l;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: $--breakpoint-s) {
+    .l-section {
+        padding: 24px 0;
+    }
+}

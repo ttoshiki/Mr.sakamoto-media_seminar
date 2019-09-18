@@ -1,0 +1,211 @@
+.c-voice {
+    max-width: $--content-width-l;
+    margin: 0 auto 48px;
+    padding: 56px 60px;
+    background-color: $white;
+    .c-underLine {
+        background: linear-gradient(transparent 50%, #c4e7f5 50%);
+    }
+    &__profile {
+        display: flex;
+        align-items: center;
+        &__company {
+            display: block;
+            font-size: 24px;
+        }
+        &__position {
+            display: block;
+            font-size: 24px;
+        }
+        &__name {
+            display: block;
+            margin-top: 4px;
+            font-size: 24px;
+            &--emphasis {
+                font-size: 34px;
+                font-weight: 600;
+                font-style: normal;
+                letter-spacing: 6px;
+            }
+        }
+        &__text {
+            margin-left: 48px;
+        }
+    }
+    &__heading {
+        &--emphasis {
+            margin-top: 48px;
+            font-size: 32px;
+            font-weight: 600;
+            color: #015c7f;
+            letter-spacing: 2px;
+        }
+    }
+    &__body {
+        font-size: 24px;
+        &--emphasis {
+            font-weight: 600;
+            font-style: normal;
+        }
+    }
+    &:last-of-type {
+        margin-bottom: 80px;
+    }
+}
+
+.c-underLine {
+    background: linear-gradient(transparent 50%, #ccdee5 50%);
+}
+
+.c-checkList {
+    margin: auto;
+    max-width: $--content-width-l;
+    padding-left: 0;
+    list-style: none;
+    &__list {
+        display: flex;
+        margin-bottom: 30px;
+        padding-left: 64px;
+        font-size: 28px;
+        background: url('../img/icon_checkbox.png') no-repeat center left;
+        position: relative;
+    }
+    &__underLine {
+        border-bottom: 1px solid #bfbfbf;
+    }
+    &--emphasis {
+        font-weight: 600;
+        font-style: normal;
+    }
+}
+
+.c-description {
+    margin: 0 auto 64px;
+    max-width: $--content-width-l;
+    &.-primary {
+        color: #0177a4;
+    }
+    .c-underLine {
+        background: linear-gradient(transparent 50%, #cce4ed 50%);
+    }
+    &--emphasis {
+        font-style: normal;
+        font-weight: 600;
+    }
+    &__body {
+        margin: 8px auto;
+        font-size: 24px;
+        line-height: 1.7;
+    }
+}
+
+.c-squareHeading {
+    margin-top: 180px;
+    padding: 8px 0;
+    background-color: $brand;
+    font-size: 50px;
+    letter-spacing: .5em;
+}
+
+@media screen and (max-width: $--breakpoint-m) {
+    .c-voice {
+        width: 90%;
+        padding: 40px 44px;
+        &__profile {
+            &__text {
+                margin-left: 32px;
+            }
+            &__company,
+            &__position {
+                font-size: 16px;
+            }
+            &__name {
+                font-size: 20px;
+                &--emphasis {
+                    font-size: 30px;
+                }
+            }
+        }
+        &__heading {
+            &--emphasis {
+                font-size: 24px;
+            }
+        }
+        &__body {
+            font-size: 20px;
+        }
+    }
+    .c-checkList {
+        padding: 0 16px;
+        max-width: 720px;
+        &__list {
+            font-size: 20px;
+            background-size: 40px;
+            padding-left: 48px;
+        }
+    }
+    .c-description {
+        padding: 0 16px;
+        margin-bottom: 56px;
+        &__body {
+            font-size: 20px;
+        }
+    }
+    .c-squareHeading {
+        margin-top: 120px;
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: $--breakpoint-s) {
+    .c-voice {
+        padding: 16px 20px;
+        &__profile {
+            display: block;
+            &__text {
+                margin-left: 0;
+                text-align: center;
+            }
+            &__name {
+                font-size: 16px;
+                &--emphasis {
+                    font-size: 26px;
+                }
+            }
+        }
+        &__photo {
+            display: block;
+            margin: 24px auto 16px;
+            width: 140px;
+            height: auto;
+        }
+        &__heading {
+            &--emphasis {
+                margin-top: 32px;
+                font-size: 20px;
+            }
+        }
+        &__body {
+            font-size: 16px;
+        }
+        &:last-of-type {
+            margin-bottom: 40px;
+        }
+    }
+    .c-checkList {
+        &__list {
+            background-size: 32px;
+            font-size: 16px;
+            padding-left: 40px;
+        }
+    }
+    .c-description {
+        &__body {
+            font-size: 16px;
+        }
+    }
+    .c-squareHeading {
+        margin-top: 80px;
+        font-size: 26px;
+    }
+}

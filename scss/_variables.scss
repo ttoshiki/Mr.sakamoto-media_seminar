@@ -1,0 +1,31 @@
+// Color
+$white: #fff;
+$black: #000;
+$brand: #0177a4;
+$brand-dark: #6c8de0;
+$tint: #3783e4;
+$error: #ff0000;
+$error-light: #e87474;
+$disabled: #c2c2c2;
+$white: #ffffff;
+$black: #000000;
+$gray-900: #8e8e8e;
+$gray-600: #c2c2c2;
+$gray-300: #d8d8d8;
+$gray-100: #ebebeb;
+
+
+$button-backgroundColor: #ff5e25;
+$button-backgroundColor--hover: #ff814e;
+$button-borderBottomColor: #ab4121;
+$button-textColor: $white;
+
+// BreakPoint Rule
+$--breakpoint-s: 480px !default;
+$--breakpoint-m: 960px !default;
+$--breakpoint-l: 1000px !default;
+
+// Width Rule
+$--content-width-s: 480px;
+$--content-width-m: 960px;
+$--content-width-l: 1000px;
