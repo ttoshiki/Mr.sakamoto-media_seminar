@@ -3,13 +3,13 @@
 .conversionButton {
     display: block;
     margin: 0 auto;
-    padding: 8px 24px;
-    height: 100px;
+    padding: 0px 16px;
+    height: 72px;
     width: 100%;
-    max-width: 600px;
+    max-width: 480px;
     background-color: $button-backgroundColor;
     color: $button-textColor;
-    font-size: 40px;
+    font-size: 28px;
     font-weight: 600;
     letter-spacing: 2px;
     border: none;
@@ -23,6 +23,7 @@
     &__img {
         vertical-align: bottom;
         padding-right: 8px;
+        height: 29px;
     }
 }
 
@@ -39,7 +40,7 @@
 }
 
 .-large {
-    font-size: 26px;
+    font-size: 18px;
 }
 
 .-sp {
@@ -47,11 +48,6 @@
 }
 
 @media screen and (max-width: $--breakpoint-m) {
-    .conversionButton {
-        width: 96%;
-        height: 80px;
-        font-size: 32px;
-    }
     .-large {
         font-size: 22px;
     }

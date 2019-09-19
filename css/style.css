@@ -6,6 +6,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url(_variables.css);
 html {
   line-height: 1.15;
   /* 1 */
@@ -362,7 +363,7 @@ body {
 }
 
 .l-content {
-  max-width: 1000px;
+  max-width: 860px;
   margin: 0 auto;
 }
 
@@ -375,13 +376,13 @@ body {
 .conversionButton {
   display: block;
   margin: 0 auto;
-  padding: 8px 24px;
-  height: 100px;
+  padding: 0px 16px;
+  height: 72px;
   width: 100%;
-  max-width: 600px;
+  max-width: 480px;
   background-color: #ff5e25;
   color: #ffffff;
-  font-size: 40px;
+  font-size: 28px;
   font-weight: 600;
   letter-spacing: 2px;
   border: none;
@@ -398,6 +399,7 @@ body {
 .conversionButton__img {
   vertical-align: bottom;
   padding-right: 8px;
+  height: 29px;
 }
 
 .-primary {
@@ -413,7 +415,7 @@ body {
 }
 
 .-large {
-  font-size: 26px;
+  font-size: 18px;
 }
 
 .-sp {
@@ -421,11 +423,6 @@ body {
 }
 
 @media screen and (max-width: 960px) {
-  .conversionButton {
-    width: 96%;
-    height: 80px;
-    font-size: 32px;
-  }
   .-large {
     font-size: 22px;
   }
@@ -453,9 +450,9 @@ body {
 }
 
 .c-voice {
-  max-width: 1000px;
+  max-width: 860px;
   margin: 0 auto 48px;
-  padding: 56px 60px;
+  padding: 56px 60px 40px;
   background-color: #ffffff;
 }
 
@@ -470,41 +467,41 @@ body {
 
 .c-voice__profile__company {
   display: block;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .c-voice__profile__position {
   display: block;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .c-voice__profile__name {
   display: block;
   margin-top: 4px;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .c-voice__profile__name--emphasis {
-  font-size: 34px;
+  font-size: 26px;
   font-weight: 600;
   font-style: normal;
   letter-spacing: 6px;
 }
 
 .c-voice__profile__text {
-  margin-left: 48px;
+  margin-left: 40px;
 }
 
 .c-voice__heading--emphasis {
   margin-top: 48px;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 600;
   color: #015c7f;
   letter-spacing: 2px;
 }
 
 .c-voice__body {
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .c-voice__body--emphasis {
@@ -522,7 +519,7 @@ body {
 
 .c-checkList {
   margin: auto;
-  max-width: 1000px;
+  max-width: 720px;
   padding-left: 0;
   list-style: none;
 }
@@ -530,9 +527,10 @@ body {
 .c-checkList__list {
   display: flex;
   margin-bottom: 30px;
-  padding-left: 64px;
-  font-size: 28px;
+  padding-left: 44px;
+  font-size: 20px;
   background: url("../img/icon_checkbox.png") no-repeat center left;
+  background-size: 32px;
   position: relative;
 }
 
@@ -546,8 +544,8 @@ body {
 }
 
 .c-description {
-  margin: 0 auto 64px;
-  max-width: 1000px;
+  margin: 0 auto 40px;
+  max-width: 860px;
 }
 
 .c-description.-primary {
@@ -565,34 +563,25 @@ body {
 
 .c-description__body {
   margin: 8px auto;
-  font-size: 24px;
+  font-size: 16px;
   line-height: 1.7;
 }
 
 .c-squareHeading {
-  margin-top: 180px;
+  margin-top: 92px;
   padding: 8px 0;
   background-color: #0177a4;
-  font-size: 50px;
+  font-size: 42px;
   letter-spacing: .5em;
 }
 
 @media screen and (max-width: 960px) {
   .c-voice {
     width: 90%;
-    padding: 40px 44px;
+    padding: 44px 44px 20px;
   }
   .c-voice__profile__text {
     margin-left: 32px;
-  }
-  .c-voice__profile__company, .c-voice__profile__position {
-    font-size: 16px;
-  }
-  .c-voice__profile__name {
-    font-size: 20px;
-  }
-  .c-voice__profile__name--emphasis {
-    font-size: 30px;
   }
   .c-voice__heading--emphasis {
     font-size: 24px;
@@ -605,25 +594,23 @@ body {
     max-width: 720px;
   }
   .c-checkList__list {
-    font-size: 20px;
-    background-size: 40px;
-    padding-left: 48px;
+    background-size: 32px;
+    padding-left: 44px;
   }
   .c-description {
     padding: 0 16px;
-    margin-bottom: 56px;
   }
   .c-description__body {
     font-size: 20px;
   }
   .c-squareHeading {
-    margin-top: 120px;
     font-size: 40px;
   }
 }
 
 @media screen and (max-width: 480px) {
   .c-voice {
+    margin-bottom: 24px;
     padding: 16px 20px;
   }
   .c-voice__profile {
@@ -641,12 +628,12 @@ body {
   }
   .c-voice__photo {
     display: block;
-    margin: 24px auto 16px;
+    margin: 8px auto 16px;
     width: 140px;
     height: auto;
   }
   .c-voice__heading--emphasis {
-    margin-top: 32px;
+    margin: 24px auto;
     font-size: 20px;
   }
   .c-voice__body {
@@ -664,27 +651,28 @@ body {
     font-size: 16px;
   }
   .c-squareHeading {
-    margin-top: 80px;
+    margin-top: 48px;
     font-size: 26px;
   }
 }
 
 .mainVisual {
-  padding-top: 24px;
+  padding-top: 0;
   background: url("../img/main01.jpg");
   background-size: cover;
 }
 
 .mainVisual__catchCopy {
   margin: 0;
-  font-size: 26px;
+  padding: 16px;
+  font-size: 18px;
   font-weight: 600;
-  padding: 16px 0 24px;
+  padding: 16px 0;
 }
 
 .mainVisual__body {
   margin: 0;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1.4;
 }
@@ -698,13 +686,13 @@ body {
 .mainVisual__band.-primary {
   background-color: #6c8de0;
   width: 100%;
-  max-width: 960px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
 .mainVisual__band--emphasis {
   margin: 0;
-  font-size: 30px;
+  font-size: 22px;
   color: #015b7d;
   font-weight: 600;
   line-height: 1.3;
@@ -712,79 +700,81 @@ body {
 
 .mainVisual__band__img {
   width: 100%;
-  max-width: 1000px;
+  max-width: 860px;
 }
 
 .mainVisual--emphasis {
-  font-size: 48px;
+  font-size: 36px;
 }
 
 .mainVisual__title {
-  margin: 56px auto 48px;
+  margin: 48px auto 24px;
 }
 
 .mainVisual__title__img {
   width: 96%;
-  max-width: 1000px;
+  max-width: 860px;
 }
 
 .mainVisual__caption {
-  font-size: 24px;
-  margin: 0 auto 48px;
+  font-size: 16px;
+  margin: 0 auto 44px;
 }
 
 .ctaText {
-  font-size: 20px;
-  padding: 64px 0 24px;
+  font-size: 12px;
+  padding: 32px 0 34px;
 }
 
 .ctaText__heading {
   margin: 0 auto;
-  font-size: 44px;
+  font-size: 32px;
   letter-spacing: .2em;
+  line-height: 1.8;
 }
 
 .ctaText--emphasis {
-  font-size: 56px;
+  font-size: 42px;
   color: #0177a4;
+  line-height: 1.5;
 }
 
 .ctaText__img {
   display: block;
-  margin: 40px auto 0;
+  margin: 24px auto 0;
   width: 80%;
-  max-width: 370px;
+  max-width: 290px;
 }
 
 .onlyForVisitors {
-  padding: 48px 0 64px;
+  padding: 92px 0;
   background: url("../img/onlyForVisitors_background.png");
   background-size: cover;
-  font-size: 28px;
+  font-size: 20px;
 }
 
 .onlyForVisitors__heading {
-  margin-bottom: 0;
+  margin: 0 auto;
 }
 
 .onlyForVisitors__heading__img {
   width: 80%;
-  max-width: 700px;
+  max-width: 640px;
 }
 
 .onlyForVisitors__body {
-  margin-top: 8px;
-  font-size: 46px;
-  line-height: 1.2;
+  margin-top: 12px;
+  font-size: 36px;
+  line-height: 1.3;
   font-weight: 600;
 }
 
 .onlyForVisitors--strong {
-  font-size: 76px;
+  font-size: 64px;
 }
 
 .onlyForVisitors--emphasis {
-  font-size: 58px;
+  font-size: 50px;
 }
 
 .onlyForVisitors .-primary {
@@ -793,19 +783,25 @@ body {
 
 .onlyForVisitors__benefits {
   width: 90%;
-  max-width: 1000px;
+  max-width: 740px;
   display: block;
-  margin: 0 auto 60px;
+  margin: 0 auto 58px;
+}
+
+.becomeKnown {
+  padding: 40px 0;
 }
 
 .becomeKnown__text {
-  font-size: 40px;
+  margin: 0 auto;
+  font-size: 30px;
   letter-spacing: .1em;
   font-weight: 600;
+  line-height: 1.7;
 }
 
 .becomeKnown--emphasis {
-  font-size: 48px;
+  font-size: 38px;
 }
 
 .voice {
@@ -813,12 +809,13 @@ body {
 }
 
 .voice__heading {
-  font-size: 72px;
+  margin: 26px auto 40px;
+  font-size: 54px;
   letter-spacing: .2em;
 }
 
 .voice .conversionButton {
-  margin-bottom: 62px;
+  margin-bottom: 32px;
 }
 
 .mainDescription {
@@ -827,6 +824,10 @@ body {
 
 .mainDescription .c-checkList {
   margin-bottom: 120px;
+}
+
+.mainDescription .conversionButton {
+  margin: 72px auto 10px;
 }
 
 .practice {
@@ -840,49 +841,50 @@ body {
 
 .practice__img {
   width: 100%;
-  max-width: 1180px;
-  margin-bottom: 80px;
+  max-width: 1000px;
+  margin-bottom: 64px;
 }
 
 .practice__img.-right {
   display: block;
-  margin: 100px 0 0 auto;
+  margin: 110px 0 0 auto;
 }
 
 .practice__img.-left {
   display: block;
-  margin: 0 auto 0 0;
+  margin: 110px auto 70px 0;
 }
 
 .trouble {
   background: url("../img/trouble_background.jpg") no-repeat;
   background-size: cover;
-  min-height: 1080px;
+  min-height: 900px;
 }
 
 .trouble__heading {
-  font-size: 36px;
+  font-size: 28px;
   text-shadow: #ffffff 1px 1px 20px, #ffffff -1px 1px 20px, #ffffff 1px -1px 20px, #ffffff -1px -1px 20px;
+  margin-top: 8px;
 }
 
 .trouble--emphasis {
-  font-size: 60px;
+  font-size: 52px;
 }
 
 .trouble__img {
   display: block;
   margin: 48px auto 0;
   width: 96%;
-  max-width: 1000px;
+  max-width: 860px;
 }
 
 .notToSpread {
-  padding-top: 0;
+  padding: 0 0 40px;
 }
 
 .notToSpread__heading {
   margin-top: -2px;
-  margin-bottom: 40px;
+  margin-bottom: 72px;
 }
 
 .notToSpread__heading__img {
@@ -896,25 +898,30 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 520px;
+  min-height: 320px;
 }
 
 .capture__heading {
-  font-size: 72px;
+  padding: 0 16px;
+  font-size: 48px;
 }
 
 .lifeStyle {
-  padding-bottom: 80px;
+  padding: 70px 0 80px;
+}
+
+.lifeStyle .conversionButton {
+  margin-top: 72px;
 }
 
 .seminarIntroduction {
   background-color: #ecedf0;
-  padding-top: 80px;
+  padding-top: 24px;
 }
 
 .seminarIntroduction__text {
   width: 96%;
-  max-width: 1000px;
+  max-width: 720px;
   display: block;
   margin: 60px auto;
 }
@@ -923,39 +930,33 @@ body {
   display: block;
   margin: 0 auto 24px;
   width: 100%;
-  max-width: 1000px;
+  max-width: 720px;
 }
 
 .appropriate {
-  padding: 0 0 100px;
+  padding: 0 0 32px;
 }
 
 .appropriate__heading {
-  margin: 0 auto 40px;
+  margin: 0 auto 32px;
   width: 100%;
 }
 
-.appropriate .c-checkList__list {
-  font-size: 24px;
-  padding-left: 54px;
-}
-
-.appropriate .c-checkList__underLine {
-  border-bottom: 3px solid #bfbfbf;
-}
-
 .overView {
-  max-width: 1000px;
+  max-width: 860px;
   margin: 0 auto;
 }
 
 .overView__wrapper {
-  margin: 80px auto;
+  margin: 60px auto;
+}
+
+.overView__labelValue {
+  margin: 0 0 56px 40px;
 }
 
 .overView__label, .overView__value {
-  display: inline-block;
-  font-size: 40px;
+  font-size: 24px;
   margin-bottom: 16px;
 }
 
@@ -964,28 +965,27 @@ body {
 }
 
 .overView__label {
-  width: 380px;
-  text-align: right;
+  font-weight: 600;
 }
 
 .overView__value {
-  margin-left: 60px;
+  margin-left: 0;
+  font-size: 20px;
 }
 
 .overView__value__description {
   display: block;
   max-width: 700px;
-  margin: 0 auto;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .profile {
-  max-width: 1000px;
+  max-width: 860px;
   margin: 0 auto 80px;
 }
 
 .profile .c-squareHeading {
-  margin-top: 100px;
+  margin-top: 40px;
   letter-spacing: .2em;
 }
 
@@ -996,16 +996,16 @@ body {
 }
 
 .profile__img {
-  margin-left: 24px;
+  margin: 24px 0 0 24px;
 }
 
 .profile__name {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 600;
 }
 
 .profile__position {
-  font-size: 30px;
+  font-size: 20px;
   padding-right: 16px;
 }
 
@@ -1017,7 +1017,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
+  margin-top: 48px;
   font-size: 40px;
   font-weight: 400;
 }
@@ -1039,12 +1039,12 @@ body {
 }
 
 .profile__biography {
-  font-size: 24px;
+  font-size: 16px;
   margin: 8px auto;
 }
 
 .profile__biography__wrapper {
-  margin: 0 auto 60px;
+  margin: 0 auto 40px;
 }
 
 .profile__achievement {
@@ -1055,13 +1055,13 @@ body {
 .profile__achievement__labelValue {
   display: flex;
   margin-bottom: 16px;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .profile__body {
   max-width: 800px;
   margin: 0 auto 100px;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .profile__body.-right {
@@ -1069,38 +1069,8 @@ body {
 }
 
 @media screen and (max-width: 960px) {
-  .mainVisual__catchCopy {
-    padding: 16px;
-    font-size: 18px;
-  }
-  .mainVisual__body {
-    font-size: 22px;
-  }
-  .mainVisual__band__emphasis {
-    font-size: 22px;
-  }
-  .mainVisual--emphasis {
-    font-size: 40px;
-  }
-  .mainVisual__caption {
-    font-size: 16px;
-    padding: 0 16px;
-  }
   .ctaText__heading {
     padding: 0 16px;
-    font-size: 32px;
-  }
-  .ctaText--emphasis {
-    font-size: 48px;
-  }
-  .onlyForVisitors__body {
-    font-size: 38px;
-  }
-  .onlyForVisitors--strong {
-    font-size: 68px;
-  }
-  .onlyForVisitors--emphasis {
-    font-size: 50px;
   }
   .becomeKnown__text {
     padding: 0 16px;
@@ -1109,18 +1079,6 @@ body {
   .becomeKnown--emphasis {
     font-size: 36px;
   }
-  .voice__heading {
-    font-size: 56px;
-  }
-  .practice {
-    margin-bottom: 40px;
-  }
-  .practice__img {
-    margin-bottom: 60px;
-  }
-  .trouble {
-    min-height: initial;
-  }
   .trouble__heading {
     padding: 0 16px;
     font-size: 28px;
@@ -1128,42 +1086,9 @@ body {
   .trouble--emphasis {
     font-size: 48px;
   }
-  .capture {
-    min-height: 360px;
-  }
-  .capture__heading {
-    padding: 0 16px;
-    font-size: 48px;
-  }
-  .appropriate {
-    padding: 0 0 60px;
-  }
-  .appropriate__heading {
-    margin-bottom: 24px;
-  }
   .appropriate .c-checkList__list {
     padding-left: 48px;
-    font-size: 20px;
     background-size: 36px;
-  }
-  .overView__label, .overView__value {
-    text-align: center;
-    font-size: 32px;
-    width: 96%;
-    display: block;
-  }
-  .overView__label {
-    margin: 0 auto 8px;
-  }
-  .overView__value {
-    margin: 0 auto 0;
-  }
-  .overView__value__description {
-    text-align: left;
-    font-size: 20px;
-  }
-  .overView__labelValue {
-    margin-bottom: 40px;
   }
   .profile__wrapper {
     display: block;
@@ -1179,15 +1104,8 @@ body {
     margin-left: 0;
     padding: 0 16px;
   }
-  .profile__position {
-    font-size: 26px;
-  }
   .profile__name {
     text-align: center;
-    font-size: 36px;
-  }
-  .profile__biography {
-    font-size: 20px;
   }
   .profile__biography__wrapper {
     margin-bottom: 56px;
@@ -1200,7 +1118,6 @@ body {
   }
   .profile__achievement__labelValue {
     display: block;
-    font-size: 20px;
     margin-bottom: 24px;
   }
   .profile__achievement__value {
@@ -1208,7 +1125,6 @@ body {
   }
   .profile__body {
     padding: 0 16px;
-    font-size: 20px;
   }
 }
 
@@ -1217,11 +1133,11 @@ body {
     padding-top: 8px;
   }
   .mainVisual__catchCopy {
-    padding: 8px 16px;
+    padding: 8px 16px 14px;
     font-size: 12px;
   }
   .mainVisual__title {
-    margin: 24px auto 16px;
+    margin: 24px auto 8px;
   }
   .mainVisual__body {
     font-size: 14px;
@@ -1237,10 +1153,10 @@ body {
   }
   .mainVisual__caption {
     font-size: 12px;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
   }
   .ctaText {
-    padding: 30px 0 16px;
+    padding: 16px 0 16px;
   }
   .ctaText__heading {
     font-size: 18px;
@@ -1256,12 +1172,13 @@ body {
     padding: 8px 0 40px;
   }
   .onlyForVisitors__heading {
-    margin-top: 24px;
+    margin-top: 32px;
   }
   .onlyForVisitors__body {
+    margin-top: 0;
     padding: 0 16px;
     font-size: 22px;
-    line-height: 1.5;
+    line-height: 1.6;
   }
   .onlyForVisitors--strong {
     font-size: 40px;
@@ -1270,7 +1187,13 @@ body {
     font-size: 24px;
   }
   .onlyForVisitors__benefits {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
+  }
+  .onlyForVisitors .-primary {
+    line-height: .6;
+  }
+  .becomeKnown {
+    padding: 18px 0;
   }
   .becomeKnown__text {
     font-size: 18px;
@@ -1280,18 +1203,32 @@ body {
   }
   .voice__heading {
     font-size: 32px;
+    margin: 12px 0 20px;
   }
   .voice .conversionButton {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
   }
   .practice {
     margin-bottom: 24px;
   }
   .practice__img {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+  }
+  .practice__img.-left {
+    margin: 72px auto 24px 0;
+  }
+  .practice__img.-right {
+    margin: 72px 0 0 auto;
   }
   .mainDescription .c-checkList {
-    margin-bottom: 100px;
+    margin-bottom: 40px;
+  }
+  .mainDescription .conversionButton {
+    margin: 62px auto 0;
+  }
+  .trouble {
+    padding: 24px 0 40px;
+    min-height: initial;
   }
   .trouble__heading {
     font-size: 20px;
@@ -1302,23 +1239,39 @@ body {
   .trouble__img {
     margin-top: 24px;
   }
+  .notToSpread {
+    padding-bottom: 16px;
+  }
+  .notToSpread__heading {
+    margin-bottom: 32px;
+  }
   .capture {
-    min-height: 200px;
+    min-height: 160px;
+    margin: 24px auto;
   }
   .capture__heading {
     font-size: 22px;
   }
   .lifeStyle {
-    padding-bottom: 40px;
+    padding: 48px 0;
+  }
+  .lifeStyle .conversionButton {
+    margin-top: 44px;
   }
   .seminarIntroduction {
     padding-top: 24px;
   }
   .seminarIntroduction__text {
-    margin: 40px auto;
+    margin: 24px auto;
+  }
+  .seminarIntroduction__photo {
+    margin: 0 auto 4px;
+  }
+  .appropriate {
+    padding: 0;
   }
   .appropriate__heading {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
   }
   .appropriate .c-checkList__list {
     font-size: 14px;
@@ -1326,19 +1279,27 @@ body {
     background-size: 24px;
   }
   .overView__wrapper {
-    margin: 40px auto;
+    margin: 40px auto 32px;
+    padding: 0 16px;
+  }
+  .overView__wrapper .overView__labelValue:last-of-type {
+    margin-bottom: 32px;
+  }
+  .overView__labelValue {
+    margin: 0 0 40px 0;
   }
   .overView__label, .overView__value {
     font-size: 20px;
   }
   .overView__value__description {
-    font-size: 18px;
+    font-size: 16px;
+    margin-bottom: 0;
   }
   .profile {
     margin-bottom: 40px;
   }
   .profile .c-squareHeading {
-    margin-top: 64px;
+    margin-top: 20px;
   }
   .profile__img {
     width: 80%;
@@ -1352,6 +1313,9 @@ body {
   .profile__biography {
     font-size: 16px;
   }
+  .profile__biography__wrapper {
+    margin-bottom: 40px;
+  }
   .profile__heading {
     font-size: 28px;
   }
@@ -1360,6 +1324,6 @@ body {
   }
   .profile__body {
     font-size: 16px;
-    margin: 0 auto 64px;
+    margin: 0 auto 56px;
   }
 }

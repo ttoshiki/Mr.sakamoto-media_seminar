@@ -1,7 +1,7 @@
 .c-voice {
     max-width: $--content-width-l;
     margin: 0 auto 48px;
-    padding: 56px 60px;
+    padding: 56px 60px 40px;
     background-color: $white;
     .c-underLine {
         background: linear-gradient(transparent 50%, #c4e7f5 50%);
@@ -11,38 +11,38 @@
         align-items: center;
         &__company {
             display: block;
-            font-size: 24px;
+            font-size: 16px;
         }
         &__position {
             display: block;
-            font-size: 24px;
+            font-size: 16px;
         }
         &__name {
             display: block;
             margin-top: 4px;
-            font-size: 24px;
+            font-size: 16px;
             &--emphasis {
-                font-size: 34px;
+                font-size: 26px;
                 font-weight: 600;
                 font-style: normal;
                 letter-spacing: 6px;
             }
         }
         &__text {
-            margin-left: 48px;
+            margin-left: 40px;
         }
     }
     &__heading {
         &--emphasis {
             margin-top: 48px;
-            font-size: 32px;
+            font-size: 24px;
             font-weight: 600;
             color: #015c7f;
             letter-spacing: 2px;
         }
     }
     &__body {
-        font-size: 24px;
+        font-size: 16px;
         &--emphasis {
             font-weight: 600;
             font-style: normal;
@@ -59,15 +59,16 @@
 
 .c-checkList {
     margin: auto;
-    max-width: $--content-width-l;
+    max-width: $--content-width-m;
     padding-left: 0;
     list-style: none;
     &__list {
         display: flex;
         margin-bottom: 30px;
-        padding-left: 64px;
-        font-size: 28px;
+        padding-left: 44px;
+        font-size: 20px;
         background: url('../img/icon_checkbox.png') no-repeat center left;
+        background-size: 32px;
         position: relative;
     }
     &__underLine {
@@ -80,7 +81,7 @@
 }
 
 .c-description {
-    margin: 0 auto 64px;
+    margin: 0 auto 40px;
     max-width: $--content-width-l;
     &.-primary {
         color: #0177a4;
@@ -94,36 +95,26 @@
     }
     &__body {
         margin: 8px auto;
-        font-size: 24px;
+        font-size: 16px;
         line-height: 1.7;
     }
 }
 
 .c-squareHeading {
-    margin-top: 180px;
+    margin-top: 92px;
     padding: 8px 0;
     background-color: $brand;
-    font-size: 50px;
+    font-size: 42px;
     letter-spacing: .5em;
 }
 
 @media screen and (max-width: $--breakpoint-m) {
     .c-voice {
         width: 90%;
-        padding: 40px 44px;
+        padding: 44px 44px 20px;
         &__profile {
             &__text {
                 margin-left: 32px;
-            }
-            &__company,
-            &__position {
-                font-size: 16px;
-            }
-            &__name {
-                font-size: 20px;
-                &--emphasis {
-                    font-size: 30px;
-                }
             }
         }
         &__heading {
@@ -139,26 +130,24 @@
         padding: 0 16px;
         max-width: 720px;
         &__list {
-            font-size: 20px;
-            background-size: 40px;
-            padding-left: 48px;
+            background-size: 32px;
+            padding-left: 44px;
         }
     }
     .c-description {
         padding: 0 16px;
-        margin-bottom: 56px;
         &__body {
             font-size: 20px;
         }
     }
     .c-squareHeading {
-        margin-top: 120px;
         font-size: 40px;
     }
 }
 
 @media screen and (max-width: $--breakpoint-s) {
     .c-voice {
+        margin-bottom: 24px;
         padding: 16px 20px;
         &__profile {
             display: block;
@@ -175,13 +164,13 @@
         }
         &__photo {
             display: block;
-            margin: 24px auto 16px;
+            margin: 8px auto 16px;
             width: 140px;
             height: auto;
         }
         &__heading {
             &--emphasis {
-                margin-top: 32px;
+                margin: 24px auto;
                 font-size: 20px;
             }
         }
@@ -205,7 +194,7 @@
         }
     }
     .c-squareHeading {
-        margin-top: 80px;
+        margin-top: 48px;
         font-size: 26px;
     }
 }
